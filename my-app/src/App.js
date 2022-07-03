@@ -17,11 +17,11 @@ function App() {
       <HashRouter>
         <Routes>
           <Route exact path="/projects" element={<div> <NavBar/> <Projects/> </div>}/>
-          <Route exact path="/projects/pacman" element={<div><NavBar/> <Pacman/></div>}/>
-          <Route exact path="/projects/frigo" element={<div><NavBar/> <Frigo/></div>}/>
-          <Route exact path="/projects/tripplanner" element={<div><NavBar/> <TripPlanner/></div>}/>
-          <Route exact path="/projects/goodnewspartners" element={<div><NavBar/> <GNP/></div>}/>
-          <Route exact path="/projects/bearroom" element={<div><NavBar/> <BearRoom/></div>}/>
+          <Route exact path="/pacman" element={<div><NavBar/> <Pacman/></div>}/>
+          <Route exact path="/frigo" element={<div><NavBar/> <Frigo/></div>}/>
+          <Route exact path="/tripplanner" element={<div><NavBar/> <TripPlanner/></div>}/>
+          <Route exact path="/goodnewspartners" element={<div><NavBar/> <GNP/></div>}/>
+          <Route exact path="/bearroom" element={<div><NavBar/> <BearRoom/></div>}/>
           <Route path="/resume" element={<div><NavBar/><Resume/></div>}/>
           <Route path="/about" element={<div><NavBar/><About/></div>}/>
           <Route path="/" element={<div><NavBar/><DavidYim/></div>}/>

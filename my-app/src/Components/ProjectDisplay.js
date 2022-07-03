@@ -14,7 +14,7 @@ function ProjectDisplay(project){
     };
   
     project = project.project
-    const redirectlink = "/projects/" + project
+    const redirectlink = "/" + project
     const image = "./"+project+".png"
     const backpage = <div style={{display:"flex", flexDirection:"column", alignItems:"center", padding: "20px", textAlign:"center", fontSize:"20px"}}><strong>{mapNametoTitle(project)}</strong>{mapNametoDescription(project)}</div>
     return(
