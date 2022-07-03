@@ -14,7 +14,7 @@ function DavidYim(){
 
     const glowoff =  <div className="home">
                         <div className="signoff">
-                            D<span>av</span>id<span>&nbsp;</span><span>Y</span>im
+                            D<span>av</span>id<span>&nbsp;</span><span>Y</span>im1
                             <span>&nbsp;</span><span>&nbsp;</span>
                             <button class="glowbutton" onClick={handleglowon}>OFF</button>
                         </div>
@@ -22,7 +22,7 @@ function DavidYim(){
 
     const glowon = <div className="home">
                         <div className='sign'>
-                            <span>David</span><span>&nbsp;</span><span>Yim</span>
+                            <span>David</span><span>&nbsp;</span><span>Yim1</span>
                             <span>&nbsp;</span><span>&nbsp;</span>
                             <button class="glowbutton" onClick={handleglowoff}>ON</button>
                         </div> 
