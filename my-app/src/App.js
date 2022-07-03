@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, BrowserRouter, Route } from "react-router-dom";
+import { Routes, HashRouter, Route } from "react-router-dom";
 import NavBar from"./Components/NavBar";
 import DavidYim from "./Components/DavidYim";
 import Projects from "./Components/Projects";
@@ -14,7 +14,7 @@ import About from "./Components/About";
 
 function App() {
   return (
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route exact path="/projects" element={<div> <NavBar/> <Projects/> </div>}/>
           <Route exact path="/projects/pacman" element={<div><NavBar/> <Pacman/></div>}/>
@@ -26,7 +26,7 @@ function App() {
           <Route path="/about" element={<div><NavBar/><About/></div>}/>
           <Route path="/" element={<div><NavBar/><DavidYim/></div>}/>
       </Routes>
-      </BrowserRouter>
+      </HashRouter>
       
   );
 }
