@@ -36,7 +36,7 @@ class App extends Component {
 
 
         return (
-            <BrowserRouter basename={isGitHubPages ? "/davidyim03.github.io" : "/"}>
+            <BrowserRouter>
                 <ThemeProvider theme={theme}>
                     <GlobalStyle />
                         <AnimatePresence>
