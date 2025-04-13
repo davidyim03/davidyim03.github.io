@@ -21,7 +21,6 @@ const Footer = (props) => (
                             © {`${(new Date().getFullYear())} ${Data.home.name}`} 
                         </p>
                     </FooterCopyright>
-                    <SocialButtons />
                 </FooterLayout>
             </BodyContainer>
         </FooterContainer>

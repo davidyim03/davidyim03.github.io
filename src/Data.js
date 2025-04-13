@@ -1,59 +1,60 @@
 const About = {
     about: {
-        title: "I live somewhere between Sketch, JavaScript, and whiteboards.",
-        description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+        title: "Navigating College and Code: We can merge, without conflicts!",
+        description: "Hello! My name is David, and I’m studying Computer Science and Economics at Northwestern University. I love startups, traveling, and eating — all of which stem from my love of learning and experiencing new things. I am a firm believer in the philosophy that programming is ultimately a means to an end. By constantly challenging myself to learn and grow, I hope to contribute to creating a future where technology is leveraged for a greater social good. ",
         experience: [
             {
-                title: "Senior Product Designer",
-                company: "Google",
-                date: "2019 - Present",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                title: "Teaching Assistant",
+                company: "Northwestern University",
+                date: "Apr. 2025 - Present",
+                description: ["- Incoming teaching assistant for Comp_sci 348: Intro to Artificial Intelligence"]
             },
             {
-                title: "Product Designer",
-                company: "Dribbble",
-                date: "2017 - 2019",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                title: "Software Developer Intern",
+                company: "PATH AI",
+                date: "Jan. 2025 - Present",
+                description: ["- Developed and managed dynamic logic handling for over 600 workout combinations using Vue.js, seamlessly integrating with the existing model to enhance user experience and functionality", "- Developed a smart scheduling system for 45 additional mental health activities, implementing logic to prevent conflicts with existing calendar events"]
             },
             {
-                title: "Product Designer",
-                company: "Facebook",
-                date: "2014 - 2017",
-                description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                title: "Software Developer Intern",
+                company: "BearRoom",
+                date: "Jun. 2022 - Aug. 2022",
+                description: ["- Designed and optimized a NoSQL Firebase Realtime Database schema for efficient storage of player data and game state, improving query performance and scalability", "- Streamlined game development workflow using React.js, reducing development time by 72% and enhancing code maintainability", "- Developed and deployed two interactive multiplayer games (Coup and Texas Hold’em) on the BearRoom board game platform, integrating real-time gameplay and state management"]
             },
+            {
+                title: "Sergeant",
+                company: "Republic of Korea Army",
+                date: "Nov. 2022 - May. 2024",
+                description: ["- Commanded and mentored a squad of 12 personnel, developing and executing comprehensive training programs and operational plans to ensure mission readiness and team cohesion", "- Led initiatives to extinguish wildfires and support communities in recovering from flood disasters, demonstrating leadership, teamwork, and crisis management skills"],
+            },
+            
         ],
         education: [
             {
-                degree: "MS",
-                program: "Human-Centered Design & Engineering",
-                school: "University of Michigan",
-                date: "2019 - 2021",
-                about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-            },
-            {
-                degree: "BFA",
-                program: "Graphic Design",
-                school: "University of Michigan",
-                date: "2009 - 2013",
-                about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                degree: "BA",
+                program: "Computer Science, Economics",
+                school: "Northwestern University",
+                date: "2021 ~",
+                about: "GPA: 3.89/4.0"
             }
         ]
     },
     contact: {
         title: "Get in touch.",
         description: "I'm always interested in meeting new people. Use the contact form, or you can shoot me an email at",
-        email: "hello@schrutefarms.com",
+        email1: "davidyim2025@u.northwestern.edu",
+        email2: "davidyim03@gmail.com",
         formspree: ""
     },
     home: {
-        name: "Dwight Schrute",
+        name: "David Yim",
         title: "Personal blog where I write code and explain all the things.",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     social: {
         codepen: "stevehayes",
         dribbble: "stevehayes",
-        linkedin: "stephenahayes"
+        linkedin: "in/david-yim-a8a0311ba/"
     },
 
 };

@@ -48,7 +48,7 @@ References are usually placed at the bottom of the document
 
 A sample image :
 
-![revolunet logo](http://www.revolunet.com/static/parisjs8/img/logo-revolunet-carre.jpg "revolunet logo")
+![revolunet logo](https://static.wikia.nocookie.net/versus-compendium/images/0/00/Link_BotW.png "revolunet logo")
 
 As links, images can also use references instead of inline links :
 

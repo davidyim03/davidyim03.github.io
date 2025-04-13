@@ -6,10 +6,10 @@ const AboutHero = () => {
     return(
         <Container >
             <Container flex bottom={6}>
-                <Container width={50} right={3} bottom={3}>
+                <Container width={30} right={3} bottom={3}>
                     <h1>About</h1>
                 </Container>
-                <Container width={50}>
+                <Container width={70}>
                     <p>{Data.about.description}</p>
                 </Container>
             </Container>

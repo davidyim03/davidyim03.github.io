@@ -11,4 +11,9 @@ export const ResumeTitle = styled.p`
         color: white;
         font-weight: 600;
     }
+    span:nth-of-type(3) {
+        color: white;
+        font-weight: 600;
+    }
+
 `;

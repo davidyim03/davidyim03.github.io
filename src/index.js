@@ -5,7 +5,8 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 // Pages
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
-import Contact from "./pages/Contact.jsx";
+import CourseWork from "./pages/Coursework.jsx";
+import Projects from "./pages/Projects.jsx";
 
 import BlogPost from './components/BlogPost/BlogPost';
 
@@ -48,8 +49,12 @@ class App extends Component {
                                 <About />
                             </Route>
 
-                            <Route path="/contact">
-                                <Contact />
+                            <Route path="/projects">
+                                <Projects />
+                            </Route>
+
+                            <Route path="/coursework">
+                                <CourseWork />
                             </Route>
 
                             {Posts.map((post) => {
