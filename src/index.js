@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import { HashRouter, Route, Routes, Navigate } from "react-router-dom";
 
 // Pages
 import Home from "./pages/Home.jsx";
@@ -34,41 +34,41 @@ class App extends Component {
 
 
         return (
-            <BrowserRouter basename="/davidyim03.github.io">
-            <ThemeProvider theme={theme}>
-                <GlobalStyle />
-                <BrowserRouter>
-                    <AnimatePresence>
-                    <Routes>
-                        <Route path="/" element={<Navigate to="/home" replace />} />
-                        <Route path="/home" element={<h1>✅ Home Works</h1>} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="/projects" element={<Projects />} />
-                        <Route path="/coursework" element={<CourseWork />} />
+            <HashRouter>
+                <ThemeProvider theme={theme}>
+                    <GlobalStyle />
+                    <BrowserRouter>
+                        <AnimatePresence>
+                        <Routes>
+                            <Route path="/" element={<Navigate to="/home" replace />} />
+                            <Route path="/home" element={<h1>✅ Home Works</h1>} />
+                            <Route path="/about" element={<About />} />
+                            <Route path="/projects" element={<Projects />} />
+                            <Route path="/coursework" element={<CourseWork />} />
 
-                        {Posts.map((post) => (
-                            <Route
-                            key={post.route}
-                            path={`/${post.route}`}
-                            element={
-                                <BlogPost
-                                title={post.title}
-                                date={post.date}
-                                image={post.image}
-                                content={post.content}
+                            {Posts.map((post) => (
+                                <Route
+                                key={post.route}
+                                path={`/${post.route}`}
+                                element={
+                                    <BlogPost
+                                    title={post.title}
+                                    date={post.date}
+                                    image={post.image}
+                                    content={post.content}
+                                    />
+                                }
                                 />
-                            }
-                            />
-                        ))}
+                            ))}
 
-                        {/* Fallback route */}
+                            {/* Fallback route */}
 
-                        {/*<Route path="*" element={<Navigate to="/home" replace />} />*/}
-                    </Routes>
-                    </AnimatePresence>
-                </BrowserRouter>
-            </ThemeProvider>
-            </BrowserRouter>
+                            {/*<Route path="*" element={<Navigate to="/home" replace />} />*/}
+                        </Routes>
+                        </AnimatePresence>
+                    </BrowserRouter>
+                </ThemeProvider>
+            </HashRouter>
         )
     }
 }
