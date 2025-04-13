@@ -59,7 +59,8 @@ class App extends Component {
                         ))}
 
                         {/* Fallback route */}
-                        <Route path="*" element={<Navigate to="/home" replace />} />
+
+                        {/*<Route path="*" element={<Navigate to="/home" replace />} />*/}
                     </Routes>
                     </AnimatePresence>
                 </BrowserRouter>
