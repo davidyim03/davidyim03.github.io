@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { createRoot } from 'react-dom/client';
-import { HashRouter, Route, Routes, Navigate } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 // Pages
 import Home from "./pages/Home.jsx";
@@ -22,6 +22,8 @@ import Posts from '../src/posts/Posts';
 // Google Analytics
 import ReactGA from "react-ga4";
 
+const isGitHubPages = window.location.hostname.includes('github.io');
+
 class App extends Component {
 
     render () {
@@ -34,13 +36,13 @@ class App extends Component {
 
 
         return (
-            <HashRouter>
+            <BrowserRouter basename={isGitHubPages ? "/davidyim03.github.io" : "/"}>
                 <ThemeProvider theme={theme}>
                     <GlobalStyle />
                         <AnimatePresence>
                         <Routes>
                             <Route path="/" element={<Navigate to="/home" replace />} />
-                            <Route path="/home" element={<h1>✅ Home Works</h1>} />
+                            <Route path="/home" element={<Home />} />
                             <Route path="/about" element={<About />} />
                             <Route path="/projects" element={<Projects />} />
                             <Route path="/coursework" element={<CourseWork />} />
@@ -66,7 +68,7 @@ class App extends Component {
                         </Routes>
                         </AnimatePresence>
                 </ThemeProvider>
-            </HashRouter>
+            </BrowserRouter>
         )
     }
 }
