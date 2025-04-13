@@ -25,13 +25,10 @@ class App extends Component {
 
     render () {
 
-        if(window.location.hostname !== "localhost") {
-            
-            // Google Analytics ID goes here.
-            let trackingId = "123";
-
+        if (window.location.hostname !== "localhost") {
+            const trackingId = "123"; // Replace with your actual GA4 ID
             ReactGA.initialize(trackingId);
-            ReactGA.pageview('/home');
+            ReactGA.send({ hitType: "pageview", page: window.location.pathname });
         }
 
 
