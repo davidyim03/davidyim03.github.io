@@ -26,11 +26,11 @@ class App extends Component {
 
     render () {
 
-        if (window.location.hostname !== "localhost") {
-            const trackingId = "123"; // Replace with your actual GA4 ID
-            ReactGA.initialize(trackingId);
-            ReactGA.send({ hitType: "pageview", page: window.location.pathname });
-        }
+        //if (window.location.hostname !== "localhost") {
+        //    const trackingId = "123"; // Replace with your actual GA4 ID
+        //    ReactGA.initialize(trackingId);
+        //    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+        //}
 
 
         return (
