@@ -40,7 +40,8 @@ class App extends Component {
                 <BrowserRouter>
                     <AnimatePresence>
                     <Routes>
-                        <Route path="/home" element={<Home />} />
+                        <Route path="/" element={<Navigate to="/home" replace />} />
+                        <Route path="/home" element={<h1>✅ Home Works</h1>} />
                         <Route path="/about" element={<About />} />
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/coursework" element={<CourseWork />} />
