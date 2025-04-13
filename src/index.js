@@ -37,7 +37,6 @@ class App extends Component {
             <HashRouter>
                 <ThemeProvider theme={theme}>
                     <GlobalStyle />
-                    <BrowserRouter>
                         <AnimatePresence>
                         <Routes>
                             <Route path="/" element={<Navigate to="/home" replace />} />
@@ -66,7 +65,6 @@ class App extends Component {
                             {/*<Route path="*" element={<Navigate to="/home" replace />} />*/}
                         </Routes>
                         </AnimatePresence>
-                    </BrowserRouter>
                 </ThemeProvider>
             </HashRouter>
         )
