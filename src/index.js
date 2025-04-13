@@ -14,7 +14,6 @@ import * as serviceWorker from "./serviceWorker";
 import { AnimatePresence } from "framer-motion";
 import { GlobalStyle } from "./components/StyledComponents/StyledComponents.jsx";
 import { ThemeProvider } from "styled-components";
-import { BrowserRouter } from 'react-router-dom';
 
 import theme from "./components/StyledComponents/Theme";
 
