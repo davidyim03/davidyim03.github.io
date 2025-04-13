@@ -14,6 +14,8 @@ import * as serviceWorker from "./serviceWorker";
 import { AnimatePresence } from "framer-motion";
 import { GlobalStyle } from "./components/StyledComponents/StyledComponents.jsx";
 import { ThemeProvider } from "styled-components";
+import { BrowserRouter } from 'react-router-dom';
+
 import theme from "./components/StyledComponents/Theme";
 
 import Posts from '../src/posts/Posts';
@@ -33,6 +35,7 @@ class App extends Component {
 
 
         return (
+            <BrowserRouter basename="/davidyim03.github.io">
             <ThemeProvider theme={theme}>
                 <GlobalStyle />
                 <BrowserRouter>
@@ -65,6 +68,7 @@ class App extends Component {
                     </AnimatePresence>
                 </BrowserRouter>
             </ThemeProvider>
+            </BrowserRouter>
         )
     }
 }
