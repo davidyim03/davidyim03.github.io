@@ -2,7 +2,7 @@ import CampuStudyPost from '../posts/sample.md';
 import CampuStudyImage from '../assets/img/campus.png'
 import AiCheckersPost from '../posts/checkers.md';
 import AiCheckersImage from '../assets/img/checkers.png'
-import FrigoPost from '../posts/sample.md';
+import FrigoPost from '../posts/frigo.md';
 import FrigoImage from '../assets/img/frigo.jpg'
 import GNPPost from '../posts/sample.md';
 import GNPImage from '../assets/img/gnp.png'
